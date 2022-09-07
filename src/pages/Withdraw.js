@@ -17,7 +17,7 @@ function Withdraw({ contractHeir, contractNFT }) {
   const withdrawSignature = async () => {
     try{
       setLoading(true);
-      const response = await fetch("http://localhost:4000/create-proof", {
+      const response = await fetch("https://pecunia-server.onrender.com/create-proof", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
